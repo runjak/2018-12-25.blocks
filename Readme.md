@@ -1,9 +1,11 @@
 2018-12-25.blocks
 ===
 
-This is a recreation of one of my favourite puzzles up to this point.
+This is a recreation of one of my favorite puzzles up to this point.
 
 The problem is to place a number of blocks inside a box.
+
+This puzzle is also published on [Thingiverse](https://www.thingiverse.com/thing:3449628).
 
 Puzzle parts
 ---
