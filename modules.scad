@@ -41,16 +41,21 @@ module puzzle(unit) {
 }
 
 module puzzleBox(unit, margin=1) {
-  u = 5 * unit;
+  u = 5 * unit + margin;
   2m = 2 * margin;
+  hm = -margin / 2;
 
-  color([0, 1, 0]) {
-    difference() {
-      translate([-margin, -margin, -margin])
-      roundCube([u+2m, u+2m, u+2m]);
+  translate([hm, hm, 0]) {
+    color([0, 1, 0]) {
+      difference() {
+        translate([-margin, -margin, -margin])
+        roundCube([u+2m, u+2m, u]);
 
-      translate([0, 0, 2m])
-      roundCube([u, u, u]);
+        translate([0, 0, 2m])
+        roundCube([u, u, u]);
+        translate([0, 0, 0])
+        roundCube([u, u, u]);
+      }
     }
   }
 }
