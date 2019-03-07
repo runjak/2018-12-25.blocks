@@ -16,3 +16,6 @@ for(i=[0:5]) {
   translate([i*(2*unit + 1), 9*unit + 1,0])
   roundCube([2*unit, 4*unit, unit]);
 }
+
+translate([10*unit,2.5*unit,0])
+lid(unit, 3.2);
